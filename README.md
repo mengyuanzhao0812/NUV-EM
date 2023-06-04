@@ -6,6 +6,7 @@ This repository contains the code for DOA (Direction of Arrival) estimation usin
 
 - [Introduction](#introduction)
 - [Data Generation](#data-generation)
+- [System Model](#system-model)
 - [NUV-EM Algorithm](#nuv-em-algorithm)
 - [Baseline Algorithm](#baseline-algorithm)
 - [Estimation](#estimation)
@@ -22,6 +23,13 @@ This repository provides the code necessary for data generation, implementing th
 ## Data Generation
 
 The data generation code generates synthetic data with predefined parameters to simulate array measurements. It allows you to customize the number of sources, signal-to-noise ratio (SNR), array number and geometry, and other relevant parameters.
+
+## System Model
+
+The system model for DOA estimation consists of an array of sensors and multiple sources emitting signals. Each source has a specific direction of arrival (DOA) with respect to the sensor array. The goal is to estimate the DOA of each source based on the received signals at the array.
+
+It has to be configured by the following parameters: the signal types (narrowband or wideband), number of sensors and number of sources. The code in this repository is designed to handle various system models and adapt the algorithms accordingly.
+
 
 ## NUV-EM Algorithm
 
